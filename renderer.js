@@ -1,7 +1,7 @@
 // const information = document.getElementById('info')
 // information.innerText = `本应用正在使用 Chrome (v${versions.chrome()}), Node.js (v${versions.node()}), 和 Electron (v${versions.electron()})`
 
-const deadline = '2023-03-21';
+const deadline = '2023-03-24';
 
 const monthFomat = 1000 * 60 * 60 * 24 * 31
 const dayFomat = 1000 * 60 * 60 * 24
@@ -17,13 +17,6 @@ function getTimeRemaining(endtime) {
     const hour = Math.floor(total % monthFomat % dayFomat / hourFomat)
     const minute = Math.floor(total % monthFomat % dayFomat % hourFomat / minuteFomat)
     const second = Math.floor(total % monthFomat % dayFomat % hourFomat % minuteFomat / secondFomat)
-
-
-    console.log(month)
-    console.log(day)
-    console.log(hour)
-    console.log(minute)
-    console.log(second)
     return {
         month,
         day,
@@ -37,7 +30,7 @@ setInterval(() => {
     const obj = getTimeRemaining(deadline)
 
     const monthele = document.getElementById("on")
-    monthele.innerHTML =`<span style="font-size:30px;">` + obj.day+`</span> 天 <span style="font-size:30px;">` + obj.hour+`</span> 小时 <span style="font-size:30px;">`+obj.minute+`</span>  分钟 <span style="font-size:30px;">`+obj.second+"</span> 秒"
+    monthele.innerHTML =`<span class="big">` + obj.day+`</span> 天 <span class="big">` + obj.hour+`</span> 小时 <span class="big">`+obj.minute+`</span>  分钟 <span class="big">`+obj.second+"</span> 秒"
     // const dayele = document.getElementById("day")
     // dayele.innerText = obj.day+"天"
     // const hourele = document.getElementById("hour")

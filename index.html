@@ -9,26 +9,59 @@
 </head>
 
 <body style="color: #656565;">
-    <h1 style="color: #656565;">考试剩余时间!</h1>
+    <h1 style="color: #d53636;">考试剩余时间!</h1>
 
     <div id="on">
-        <span style="font-size:30px;">3</span> 月 <span style="font-size:30px;">8</span> 天 <span style="font-size:30px;">18</span> 小时 <span style="font-size:30px;">43</span>  分钟 <span style="font-size:30px;">36</span> 秒
+        <!-- <span class="big">*</span> 月 <span style="font-size:30px;">*</span> 天 <span style="font-size:30px;">*</span> 小时 <span style="font-size:30px;">*</span>  分钟 <span style="font-size:30px;">*</span> 秒 -->
+    </div>
+    <div id="redom_poetry">
+
     </div>
 </body>
 <script src="./renderer.js"></script>
+<script src="./poetry.js"></script>
 <style>
     h1 {
         color: red;
         text-align: center;
     }
-    div{
+
+    #on {
         margin: auto;
-        width: 300px;
-        margin-left: 50px;
-        margin-top: 100px;
+        width: 100%;
+        text-align: center;
+        /* background:repeating-linear-gradient(#9691cd,#d5d5d5); */
     }
-    body{
-        background:repeating-linear-gradient(#c0ff6b,#d5d5d5);
+
+    #redom_poetry {
+        margin: auto;
+        width: 100%;
+        margin-top: 40px;
+        text-align: center;
+        font-family: "华文楷体";
+       
+        /* background: lightblue; */
+        /*设置背景颜色*/
+        font-size: 26px;
+        /*设置文字大小*/
+   
+        /*设置文字居中*/
+        /* border: 1px solid #CCCCCC; */
+        /*设置元素边框*/
+        /* box-shadow: 3px 3px 6px #999999; */
+        /*设置边框阴影*/
+  
+
+        /* background:repeating-linear-gradient(#9691cd,#d5d5d5); */
+    }
+
+    html {
+        background: #d5d5d5;
+    }
+
+    .big {
+        font-size: 30px;
+        color: red;
     }
 </style>
 
